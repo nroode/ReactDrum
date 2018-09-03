@@ -1,0 +1,17 @@
+#drum-machine {
+    border: 1px solid black;
+    width: 30rem;
+    margin: 0 auto;
+}
+
+#display {
+    border: 1px solid black;
+    width: 30rem;
+    margin: 0 auto;
+}
+
+.drum-pad {
+    width: 10rem;
+    border: 1px solid blue;
+    display: inline-block;
+}
