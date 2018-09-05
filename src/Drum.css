@@ -1,17 +1,53 @@
+/* ----------DRUM -------------*/
+
 #drum-machine {
-    border: 1px solid black;
-    width: 30rem;
     margin: 0 auto;
+    
 }
 
 #display {
-    border: 1px solid black;
+    
     width: 30rem;
     margin: 0 auto;
 }
 
+/* ----------DRUM PAD -------------*/
+
 .drum-pad {
-    width: 10rem;
-    border: 1px solid blue;
+    width: 4rem;
+    height: 4rem;
+    line-height: 4rem;
+    font-size: 2rem;
     display: inline-block;
+    border-radius: 100%;
+    margin: 1rem;
+    font-weight: 700;
+}
+
+#Heater1 {
+    background-color: #FF4E50;
+}
+#Heater2 {
+    background-color: #FC913A;
+}
+#Heater3 {
+    background-color: #F9D423;
+}
+#Heater4 {
+    background-color: #9DE0AD;
+}
+#Heater6 {
+    background-color: #45ADA8;
+}
+#Kick1 {
+    background-color: #1a7e92;
+}
+#Kick2 {
+    background-color: rgb(12, 81, 186);
+}
+#Oh {
+    background-color:rgb(66, 11, 168);
+}
+#Oh2 {
+    background-color: rgb(93, 31, 168);
 }

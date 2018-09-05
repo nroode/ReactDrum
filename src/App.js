@@ -10,7 +10,7 @@ class App extends Component {
       <div className="App">
       
       <Display />
-      <Body displaytext='First Component Data' />
+      <Body />
 
 
       </div>
