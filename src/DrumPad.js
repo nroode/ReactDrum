@@ -8,29 +8,26 @@ export default class DrumPad extends Component {
         super(props)
         this.playSound = this.playSound.bind(this);
         this.keydownHandler = this.keydownHandler.bind(this);
+
         this.componentDidMount = this.componentDidMount.bind(this);
         this.componentWillUnmount = this.componentWillUnmount.bind(this);
     }
+
+    
 
     playSound(e) {
         const sound = document.getElementById(this.props.id);
         // sound.currentTime = 0;
         sound.play();
-        const display= document.getElementById('display')
-        display.innerHtml=this.props.id;
+
+        this.props.handler(this.props.clipName);
     
     }
 
-    //if press w on keyboard play sound 
-    // handlePress(e){
-    //     if (e.keyCode === this.props.keyCode){
-    //         this.playSound(e)
-    //     }
-    // }
-
-    keydownHandler(e){
+    keydownHandler(e, props){
         if(e.keyCode === this.props.keyCode) {
         this.playSound()
+
       }
     }
     

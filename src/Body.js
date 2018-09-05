@@ -61,12 +61,10 @@ const sounds = [
 ]
 
 export default class Body extends Component {
-    constructor(props) {
-        super(props)
-    }
-
+    
 
     render() {
+        // var handler=this.props.handler;
         
 
         return (
@@ -80,6 +78,7 @@ export default class Body extends Component {
                         id={sounds[i].id}
                         key={sounds[i].clipName}
                         keyCode={sounds[i].keyCode}
+                        handler={this.props.handler}
                     />
 
                 )}
