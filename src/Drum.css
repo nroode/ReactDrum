@@ -2,13 +2,18 @@
 
 #drum-machine {
     margin: 0 auto;
-    
+    width: 20rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 #display {
-    
-    width: 30rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    width: 24rem;
     margin: 0 auto;
+    
 }
 
 /* ----------DRUM PAD -------------*/
@@ -19,9 +24,13 @@
     line-height: 4rem;
     font-size: 2rem;
     display: inline-block;
+    
     border-radius: 100%;
     margin: 1rem;
     font-weight: 700;
+
+    flex: 0 0 33.3333%;
+
 }
 
 #Heater1 {

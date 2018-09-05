@@ -1,17 +1,33 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Body from './Body.js';
 import Display from './Display.js';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.handler = this.handler.bind(this)
+    // var display='',
+
+    this.state = {
+        display: 'tree'
+    }
+}
+
+handler(word) {
+  this.setState({
+    display: word
+  })
+}
+  
   render() {
     return (
       <div className="App">
       
-      <Display />
-      <Body />
-
+      <Display display={this.state.display} />
+      <Body 
+          handler={this.handler}
+       />
 
       </div>
     );
