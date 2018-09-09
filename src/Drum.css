@@ -2,21 +2,85 @@
 
 #drum-machine {
     margin: 0 auto;
-    width: 20rem;
+    margin-bottom: 2rem;
+    width: 15rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    /* background-color: #363636; */
+    padding: 1rem;
+    border-radius: 15%;
 }
 
 #display {
     font-size: 2rem;
-    text-transform: uppercase;
-    width: 24rem;
-    margin: 0 auto;
-    
+    /* text-transform: uppercase; */
+    width: 9rem;
+    height: 9rem;
+    line-height: 8rem;
+    letter-spacing: 2px;
+
+    margin: 2rem auto;
+    border-radius: 100%;
+    padding: .5rem;
+    border: .5rem solid #363636;
+    /* border: 1rem solid#2b2a2a; */
+
+    position: absolute;
+    top: 1rem;
+    left: 5.5rem;
 }
 
 /* ----------DRUM PAD -------------*/
+#effect {
+    border-color: rgb(184, 179, 179); 
+    border-radius: 100%; 
+}
+
+#effect-wrapper {
+    height: 14rem;
+    display: flex;
+    align-items: center;
+}
+
+#effect-hide {
+    height: 6rem;
+    width: 6rem;
+    border-radius: 100%; 
+    background: #232526;  
+    background: -webkit-linear-gradient(to right, #414345, #232526);  
+    background: linear-gradient(to right, #414345, #232526); 
+    
+    position: absolute;
+    top: 5.5rem;
+    left: 8rem;
+}
+
+.inactive {
+    border: .1rem solid;
+    width: 4rem;
+    height: 4rem;
+    opacity: 1;
+
+    margin: 0 auto;
+}
+
+.active {
+    border: 5rem solid;
+    width: 8rem;
+    height: 8rem;
+    /* opacity: 0; */
+    
+    margin: 0 auto;
+
+    transition-timing-function: ease;
+    -webkit-transition-property: height, width, opacity, border;
+    -webkit-transition-duration: 1s;
+    -moz-transition-property: height, width, opacity, border;
+    -moz-transition-duration: 1s;
+    transition-property: height, width, opacity, border;
+    transition-duration: 1s;
+}
 
 .drum-pad {
     width: 4rem;
@@ -26,8 +90,9 @@
     display: inline-block;
     
     border-radius: 100%;
-    margin: 1rem;
-    font-weight: 700;
+    margin: .5rem;
+    box-shadow: inset 0px 0px .5rem rgba(0, 0, 0, 0.76);
+    
 
     flex: 0 0 33.3333%;
 

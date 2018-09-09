@@ -8,7 +8,7 @@ export default class Display extends Component {
         return (
         
         <div id="display">
-            <h3>{this.props.display}</h3>
+            {this.props.display}
         </div>
     )
     }
