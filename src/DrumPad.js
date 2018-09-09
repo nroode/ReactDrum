@@ -17,11 +17,10 @@ export default class DrumPad extends Component {
 
     playSound(e) {
         const sound = document.getElementById(this.props.id);
-        // sound.currentTime = 0;
+        sound.currentTime = 0;
         sound.play();
-
-        this.props.handler(this.props.clipName);
     
+        this.props.handler(this.props.clipName, this.props.color);
     }
 
     keydownHandler(e, props){
@@ -45,7 +44,7 @@ export default class DrumPad extends Component {
         return (
 
             <div>
-
+                
                 <div
                     
                     className="drum-pad"
