@@ -14,27 +14,24 @@
 
 #display {
     font-size: 2rem;
-    /* text-transform: uppercase; */
-    width: 9rem;
-    height: 9rem;
-    line-height: 8rem;
+    width: 15rem;
+    height: 3rem;
     letter-spacing: 2px;
 
-    margin: 2rem auto;
-    border-radius: 100%;
+    margin: 0 auto;
+    border-radius: 5rem;
     padding: .5rem;
-    border: .5rem solid #363636;
-    /* border: 1rem solid#2b2a2a; */
-
-    position: absolute;
-    top: 1rem;
-    left: 5.5rem;
+    background: #232526;  
+    background: -webkit-linear-gradient(to right, #414345, #232526);  
+    background: linear-gradient(to right, #414345, #232526); 
+    border: .3rem solid #363636;
 }
 
 /* ----------DRUM PAD -------------*/
 #effect {
     border-color: rgb(184, 179, 179); 
     border-radius: 100%; 
+    z-index: 2;
 }
 
 #effect-wrapper {
@@ -50,10 +47,29 @@
     background: #232526;  
     background: -webkit-linear-gradient(to right, #414345, #232526);  
     background: linear-gradient(to right, #414345, #232526); 
-    
+    box-shadow: 0px 0px 2rem rgba(0, 0, 0, 0.701);
     position: absolute;
-    top: 5.5rem;
-    left: 8rem;
+    top: 4.5rem;
+    left: 7.5rem;
+    border: .5rem solid #363636;
+    align-items: center;
+    z-index: 3;
+}
+
+#effect-hide-outer {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 100%; 
+    background: #232526;  
+    background: -webkit-linear-gradient(to right, #414345, #232526);  
+    background: linear-gradient(to right, #414345, #232526); 
+    box-shadow: 0px 0px 2rem rgba(0, 0, 0, 0.701);
+    position: absolute;
+    top: 2.5rem;
+    left: 5.5rem;
+    border: .5rem solid #363636;
+    z-index: 1;
+   
 }
 
 .inactive {
