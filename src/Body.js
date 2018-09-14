@@ -69,13 +69,10 @@ const sounds = [
 
 ]
 
-export default class Body extends Component {
-    
+export default class Body extends Component { 
 
     render() {
-        // var handler=this.props.handler;
         
-
         return (
 
             <div id="drum-machine">

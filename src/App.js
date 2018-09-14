@@ -32,7 +32,7 @@ class App extends Component {
       color: color,
       effectStyle: 'active',
     })
-    
+
     setTimeout(() => this.resize(), 500);
 
   }
@@ -41,7 +41,9 @@ class App extends Component {
     return (
       <div className="App">
         <div id="effect-wrapper">
-        <div id="effect-hide"></div>
+          <div id="effect-hide-outer"></div>
+            <div id="effect-hide"></div>
+          
           <div id="effect" className={this.state.effectStyle} style={{ borderColor: `${this.state.color}` }}></div>
         </div>
         <Display
@@ -58,8 +60,4 @@ class App extends Component {
 
 export default App;
 
-//when sound plays, effect width and height increase by 1 each .1sec
-//transparency increases 
-
-//create state holding style start at 4rem height and width, when sound plays use keyframes? 
 
