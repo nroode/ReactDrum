@@ -3,7 +3,7 @@
 #drum-machine {
     margin: 0 auto;
     margin-bottom: 2rem;
-    width: 15rem;
+    width: 18rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -17,14 +17,16 @@
     width: 15rem;
     height: 3rem;
     letter-spacing: 2px;
-
+    color: #f0f0f0;
     margin: 0 auto;
-    border-radius: 5rem;
     padding: .5rem;
+
+    border-radius: 5rem;
     background: #232526;  
     background: -webkit-linear-gradient(to right, #414345, #232526);  
     background: linear-gradient(to right, #414345, #232526); 
     border: .3rem solid #363636;
+    box-shadow: inset 0px 0px 2rem rgba(0, 0, 0, 0.438);
 }
 
 /* ----------DRUM PAD -------------*/
@@ -85,7 +87,7 @@
     border: 5rem solid;
     width: 8rem;
     height: 8rem;
-    /* opacity: 0; */
+    opacity: 0;
     
     margin: 0 auto;
 
@@ -104,40 +106,37 @@
     line-height: 4rem;
     font-size: 2rem;
     display: inline-block;
-    
     border-radius: 100%;
-    margin: .5rem;
-    box-shadow: inset 0px 0px .5rem rgba(0, 0, 0, 0.76);
-    
-
+    margin: .25rem;
+    box-shadow: inset 0px 0px 3rem rgba(0, 0, 0, 0.911);
     flex: 0 0 33.3333%;
-
+    border: .3rem solid #363636;
 }
 
-#Heater1 {
-    background-color: #FF4E50;
+#Heater {
+    background-color: #06acf1;
 }
 #Heater2 {
-    background-color: #FC913A;
+    background-color: #0ce3ff;
 }
 #Heater3 {
-    background-color: #F9D423;
+    background-color: #51f0e8;
 }
 #Heater4 {
-    background-color: #9DE0AD;
+    background-color: #95fed0;
 }
-#Heater6 {
-    background-color: #45ADA8;
+#Clap {
+    background-color: #bbee9e;
 }
-#Kick1 {
-    background-color: #1a7e92;
+#Kick {
+    background-color: #e0de6d;
 }
-#Kick2 {
-    background-color: rgb(12, 81, 186);
+#LowKick {
+    background-color: #f0c17f;
 }
-#Oh {
-    background-color:rgb(66, 11, 168);
+#Snare {
+    background-color:#ffa391;
 }
-#Oh2 {
-    background-color: rgb(93, 31, 168);
+#Tap {
+    background-color: #e78166;
 }

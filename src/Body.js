@@ -4,67 +4,67 @@ import DrumPad from './DrumPad.js';
 
 const sounds = [
     {
-        clipName: "Heater1",
+        clipName: "Heater",
         src: "https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3",
         id: "Q",
         keyCode: 81,
-        color: "#FF4E50"
+        color: "#06acf1"
     },
     {
         clipName: "Heater2",
         src: "https://s3.amazonaws.com/freecodecamp/drums/Heater-2.mp3",
         id: "W",
         keyCode: 87,
-        color: "#FC913A"
+        color: "#0ce3ff"
     },
     {
         clipName: "Heater3",
         src: "https://s3.amazonaws.com/freecodecamp/drums/Heater-3.mp3",
         id: "E",
         keyCode: 69,
-        color: "#F9D423"
+        color: "#51f0e8"
     },
     {
         clipName: "Heater4",
         src: "https://s3.amazonaws.com/freecodecamp/drums/Heater-4_1.mp3",
         id: "A",
         keyCode: 65,
-        color: "#9DE0AD"
+        color: "#95fed0"
     },
     {
-        clipName: "Heater6",
+        clipName: "Clap",
         src: "https://s3.amazonaws.com/freecodecamp/drums/Heater-6.mp3",
         id: "S",
         keyCode: 83,
-        color: "#45ADA8"
+        color: "#bbee9e"
     },
     {
-        clipName: "Kick1",
+        clipName: "Kick",
         src: "https://s3.amazonaws.com/freecodecamp/drums/Kick_n_Hat.mp3",
         id: "D",
         keyCode: 68,
-        color: "#1a7e92"
+        color: "#e0de6d"
     },
     {
-        clipName: "Kick2",
+        clipName: "LowKick",
         src: "https://s3.amazonaws.com/freecodecamp/drums/RP4_KICK_1.mp3",
         id: "Z",
         keyCode: 90,
-        color: "rgb(12, 81, 186)"
+        color: "#f0c17f"
     },
     {
-        clipName: "Oh",
+        clipName: "Snare",
         src: "https://s3.amazonaws.com/freecodecamp/drums/Dsc_Oh.mp3",
         id: "X",
         keyCode: 88,
-        color: "rgb(66, 11, 168)"
+        color: "#ffa391"
     },
     {
-        clipName: "Oh2",
+        clipName: "Tap",
         src: "https://s3.amazonaws.com/freecodecamp/drums/Cev_H2.mp3",
         id: "C",
         keyCode: 67,
-        color: "rgb(93, 31, 168)"
+        color: "#e78166"
     },
 
 ]

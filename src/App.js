@@ -12,7 +12,7 @@ class App extends Component {
     this.handler = this.handler.bind(this);
     this.resize = this.resize.bind(this);
     this.state = {
-      display: 'tree',
+      display: '',
       color: '',
       effectStyle: 'inactive',
     }

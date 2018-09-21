@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './Drum.css';
-// import './music/CLAP1.aif';
 
 
 export default class DrumPad extends Component {
@@ -13,20 +12,16 @@ export default class DrumPad extends Component {
         this.componentWillUnmount = this.componentWillUnmount.bind(this);
     }
 
-    
-
     playSound(e) {
         const sound = document.getElementById(this.props.id);
         sound.currentTime = 0;
         sound.play();
-    
         this.props.handler(this.props.clipName, this.props.color);
     }
 
     keydownHandler(e, props){
         if(e.keyCode === this.props.keyCode) {
         this.playSound()
-
       }
     }
     
